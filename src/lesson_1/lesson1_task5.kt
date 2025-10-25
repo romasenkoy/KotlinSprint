@@ -16,4 +16,5 @@ fun main() {
     print(minutes)
     print(":")
     print("00")
+
 }
