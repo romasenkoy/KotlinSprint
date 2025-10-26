@@ -5,9 +5,10 @@ fun main () {
     val student2 = 4
     val student3 = 3
     val student4 = 5
+    val AllStudents = 4
+    val sum = student1 + student2 + student3 + student4
 
-    val medium = (student1 + student2 + student3 + student4) / 4.0
-
+    val medium = sum.toFloat() / AllStudents
     println(medium)
 
 
