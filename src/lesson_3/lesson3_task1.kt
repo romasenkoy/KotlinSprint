@@ -10,5 +10,4 @@ fun main () {
     greeting = "Добрый вечер"
 
     println("$greeting, $name!")
-
 }
