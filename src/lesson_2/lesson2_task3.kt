@@ -1,24 +1,25 @@
 package lesson_2
 
 fun main() {
-    val StartHour = 9
-    val StartMinute = 39
-    val TravelTime = 457
+    val startHour = 9
+    val startMinute = 39
+    val travelTime = 457
+    val minutesInHour = 60 //вынесла в константу
 
     // Отправление с начала дня переводим в минуты
-    val DepartureInMinutes = StartHour * 60 + StartMinute
+    val departureInMinutes = startHour * minutesInHour + startMinute
 
     // Время прибытия в минутах с начала дня
-    val ArrivalInMinutes = DepartureInMinutes + TravelTime
+    val arrivalInMinutes = departureInMinutes + travelTime
 
     // Час и минуты прибытия
-    val ArrivalHour = ArrivalInMinutes / 60
-    val ArrivalMinute = ArrivalInMinutes % 60
+    val arrivalHour = arrivalInMinutes / 60
+    val arrivalMinute = arrivalInMinutes % 60
 
     print("Время прибытия - ")
-    print(ArrivalHour)
+    print(arrivalHour)
     print(":")
-    print(ArrivalMinute)
+    print(arrivalMinute)
 }
 
 
