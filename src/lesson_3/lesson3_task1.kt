@@ -1,9 +1,14 @@
 package lesson_3
 
 fun main () {
-    var OrderNumber: Int = 75
-    val ThanksText: String = "Thank you for order!"
 
-    println(OrderNumber)
-    println(ThanksText)
+    val name = "Юля"
+    var greeting = "Добрый день"
+
+    println("$greeting, $name!")
+
+    greeting = "Добрый вечер"
+
+    println("$greeting, $name!")
+
 }
