@@ -1,22 +1,17 @@
 package lesson_3
 
 fun main() {
-    val employees = 50                 // количество постоянных сотрудников
-    val interns = 30                   // количество стажёров
-    val employeeSalary = 30000         // зарплата постоянного сотрудника
-    val internSalary = 20000           // зарплата стажёра
 
-    // 1️⃣ Расходы на зарплаты постоянных сотрудников
-    val totalEmployeeSalary = employees * employeeSalary
+    var lastName = "Андреева"
+    val firstName = "Татьяна"
+    val patronymic = "Сергеевна"
+    var age = 20
 
-    // 2️⃣ Общие расходы после прихода стажёров
-    val totalAllSalary = totalEmployeeSalary + (interns * internSalary)
+    println("[${lastName} ${firstName} ${patronymic}, $age]")
 
-    // 3️⃣ Средняя зарплата после прихода стажёров
-    val averageSalary = totalAllSalary / (employees + interns)
+    lastName = "Сидорова"
+    age = 22
 
-    // Выводим результаты
-    println("Расходы на зарплаты постоянных сотрудников: $totalEmployeeSalary")
-    println("Общие расходы после прихода стажёров: $totalAllSalary")
-    println("Средняя зарплата после прихода стажёров: $averageSalary")
+    println("[${lastName} ${firstName} ${patronymic}, $age]")
 }
+
